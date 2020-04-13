@@ -1,0 +1,501 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-77.36506, 38.95473] },
+      "properties": {
+        "name": "Test Retailer",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022organization\u0022\u003ETest Retailer\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E12120 Sunset Hills Rd\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EReston\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EVA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E20190\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-101.647232, 40.510965] },
+      "properties": {
+        "name": " FRENCHMAN VALLEY FARMERS COOP ",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMason\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EHansen\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E FRENCHMAN VALLEY FARMERS COOP \u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E101 S DOUGLAS\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EIMPERIAL\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENE\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E69033\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-102.981555, 41.130029] },
+      "properties": {
+        "name": "308 AG, LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERobert\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ERainey\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E308 AG, LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1337 SOLANO DR\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESIDNEY\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENE\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E69162\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-92.281193, 43.448038] },
+      "properties": {
+        "name": "A \u0026amp; K FEED \u0026amp; GRAIN CO",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDane\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EReiter\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA \u0026amp; K FEED \u0026amp; GRAIN CO\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E120 CENTER ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELIME SPRINGS\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E52155\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-92.179455, 44.162884] },
+      "properties": {
+        "name": "A A FERTILIZER CO INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA A FERTILIZER CO INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E900 2ND AVE SW\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EPLAINVIEW\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E55964\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-98.441811, 43.610491] },
+      "properties": {
+        "name": "A1 SPRAYING INC.",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ELynette\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EHolm\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA1 SPRAYING INC.\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E26169 US 281\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESTICKNEY\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ESD\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E57375\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-97.435911, 41.468503] },
+      "properties": {
+        "name": "ABEL INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDillon\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBlyth\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EABEL INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E23663 242ND AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECOLUMBUS\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENE\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E68601\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-84.938355, 40.743268] },
+      "properties": {
+        "name": "ADAMS COUNTY FARM BUREAU COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMorgan\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMench\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EADAMS COUNTY FARM BUREAU COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E109 E ANDREWS ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EMONROE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E46772\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-94.343115, 41.053861] },
+      "properties": {
+        "name": "ADVANCED AG SEED LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EClayton\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMuller\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EADVANCED AG SEED LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E 1718 COMMERCE RD\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECRESTON\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E 50801\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-88.198434, 32.12088] },
+      "properties": {
+        "name": "AERO APPLICATORS",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMason\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EHansen\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAERO APPLICATORS\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E12502 COUNTY ROAD 27\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESTERLING\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ECO\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E80751\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-97.972332, 42.074529] },
+      "properties": {
+        "name": "AG AGRONOMY CENTER LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDillon\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBlyth\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG AGRONOMY CENTER LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E90 MILL ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EOAKDALE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENE\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E68761\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.487029, 39.105679] },
+      "properties": {
+        "name": "AG CHEMICAL SERVICE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDouglas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMertens\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG CHEMICAL SERVICE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003EPARK ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBLACKBURN\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMO\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E65321\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.232295, 40.655408] },
+      "properties": {
+        "name": "AG CHOICE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDouglas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMertens\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG CHOICE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E100 MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECOIN\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51636\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.000089, 38.69821] },
+      "properties": {
+        "name": "AG COOP SERVICES",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDouglas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMertens\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG COOP SERVICES\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E100 S VINE ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EOTTERVILLE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMO\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E65348\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.242819, 38.689936] },
+      "properties": {
+        "name": "AG COOP SERVICES INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDouglas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMertens\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG COOP SERVICES INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E2420 CLINTON RD\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESEDALIA\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMO\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E65301\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.576336, 37.632299] },
+      "properties": {
+        "name": "AG COOP SERVICES INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDouglas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMertens\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG COOP SERVICES INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E199 N WALNUT ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELA MONTE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMO\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E65337\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-111.028423, 45.680088] },
+      "properties": {
+        "name": "AG DEPOT INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EKathryn\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EKratky\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG DEPOT INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E24 N WALLACE AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBOZEMAN\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMT\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E59771\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.800382, 44.30645] },
+      "properties": {
+        "name": "AG FIRST FARMERS COOPERATIVE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EWhitney\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETolzin\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG FIRST FARMERS COOPERATIVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E204 1ST ST S\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBROOKINGS\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ESD\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E57006\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.800747, 44.306695] },
+      "properties": {
+        "name": "AG FIRST FARMERS COOPERATIVE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EWhitney\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETolzin\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG FIRST FARMERS COOPERATIVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E245 1ST ST S\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBROOKINGS\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ESD\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E57006\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-84.151392, 31.590419] },
+      "properties": {
+        "name": "AG HORT LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDel\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBrandenburg\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG HORT LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1006 N WASHINGTON ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EALBANY\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EGA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E31701\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.819165, 42.034842] },
+      "properties": {
+        "name": "AG INPUTS INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EEllen\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EDevick\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG INPUTS INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E2340 220TH ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EAMES\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E50014\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-89.886259, 40.844893] },
+      "properties": {
+        "name": "AG LAND FS INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ELonne\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EFry\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG LAND FS INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E205 W ILLINOIS ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBRIMFIELD\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIL\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E61517\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-117.88514, 47.669345] },
+      "properties": {
+        "name": "AG LINK INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECarmine\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETyler\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG LINK INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E810 W BROADWAY AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EREARDAN\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EWA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E99029\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-117.97879, 46.322388] },
+      "properties": {
+        "name": "AG LINK INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECarmine\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETyler\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG LINK INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E207 N 3RD ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EDAYTON\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EWA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E99328\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-118.140127, 47.655506] },
+      "properties": {
+        "name": "AG LINK INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECarmine\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETyler\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG LINK INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E39100 SUNSET HIGHWAY RD E\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EDAVENPORT\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EWA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E99122\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-117.989309, 46.315903] },
+      "properties": {
+        "name": "AG LINK INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECarmine\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETyler\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG LINK INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E108 N PINE ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EDAYTON\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EWA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E99328\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-119.29225, 47.611256] },
+      "properties": {
+        "name": "AG LINK INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECarmine\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETyler\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG LINK INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E310 W MAIN\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECOULEE CITY\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EWA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E99115\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-120.061699, 47.653515] },
+      "properties": {
+        "name": "AG LINK INCORPORATED",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECarmine\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETyler\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG LINK INCORPORATED\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1 AIRPORT WAY\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EWATERVILLE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EWA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E98858\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-85.457423, 39.612994] },
+      "properties": {
+        "name": "AG ONE COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMorgan\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMench\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG ONE COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E626 N SPENCER ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ERUSHVILLE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E46173\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-85.6139, 39.747514] },
+      "properties": {
+        "name": "AG ONE CO-OP INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMorgan\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMench\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG ONE CO-OP INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E12006 N 900 W\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECHARLOTTESVILLE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E46117\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-85.363879, 39.928995] },
+      "properties": {
+        "name": "AG ONE COOP-NEW CASTLE BLK PLNT",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMorgan\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMench\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG ONE COOP-NEW CASTLE BLK PLNT\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E226 S 17TH ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ENEW CASTLE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E47362\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.444316, 44.226447] },
+      "properties": {
+        "name": "Ag Partners",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAg Partners\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EMorristown\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-92.646291, 44.202268] },
+      "properties": {
+        "name": "AG PARTNERS ",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS \u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E417 N MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EPINE ISLAND\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E55963\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.904807, 44.469682] },
+      "properties": {
+        "name": "AG PARTNERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E901 N 4TH ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELE SUEUR\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E56058\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.428355, 40.053617] },
+      "properties": {
+        "name": "AG PARTNERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E3RD \u0026amp; BAYLISS\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ERULO\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENE\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E68431\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-92.268098, 44.440865] },
+      "properties": {
+        "name": "AG PARTNERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E512 S 8TH ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELAKE CITY\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E55041\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.748519, 44.384245] },
+      "properties": {
+        "name": "AG PARTNERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1273 W DERRYNANE ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELE CENTER\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E56057\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.393613, 44.225391] },
+      "properties": {
+        "name": "AG PARTNERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E6676 250TH ST W\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EMORRISTOWN\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E55052\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.754793, 44.623409] },
+      "properties": {
+        "name": "AG PARTNERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E820 E MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBELLE PLAINE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E56011\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.870176, 44.490436] },
+      "properties": {
+        "name": "AG PARTNERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E31585 FOREST PRAIRIE RD\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELE SUEUR\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E56058\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.185888, 39.843057] },
+      "properties": {
+        "name": "AG PARTNERS COOP-BAILEYVILLE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP-BAILEYVILLE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E358 MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBAILEYVILLE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66404\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.130098, 39.721418] },
+      "properties": {
+        "name": "AG PARTNERS COOP-CENTRALIA",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP-CENTRALIA\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E404 4TH ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECENTRALIA\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66415\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.1794, 39.216991] },
+      "properties": {
+        "name": "AG PARTNERS COOPERATIVE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOPERATIVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E305 NOBLE AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBELVUE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66407\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.073429, 39.195041] },
+      "properties": {
+        "name": "AG PARTNERS COOPERATIVE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOPERATIVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E717 W BERTRAND AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESAINT MARYS\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66536\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.031113, 39.658561] },
+      "properties": {
+        "name": "AG PARTNERS COOPERATIVE",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOPERATIVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E6209 WAREHOUSE AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECORNING\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66417\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.542622, 39.846704] },
+      "properties": {
+        "name": "AG PARTNERS COOPERATIVE INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOPERATIVE INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E708 S 10TH ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EHIAWATHA\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66434\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.409568, 39.815669] },
+      "properties": {
+        "name": "AG PARTNERS COOPERATIVE INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOPERATIVE INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E211 RAILROAD ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EROBINSON\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66532\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-94.88871, 39.747811] },
+      "properties": {
+        "name": "AG PARTNERS COOPERATIVE INC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOPERATIVE INC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1910 ROSEPORT RD\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EELWOOD\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66024\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.065375, 39.834273] },
+      "properties": {
+        "name": "AG PARTNERS COOP-SENECA",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EThomas\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EBecker\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS COOP-SENECA\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E223 E MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESENECA\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EKS\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E66538\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.858431, 43.181073] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1103 RAILROAD AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESHELDON\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51201\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.002223, 42.989964] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1509 MIDWEST AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EALTON\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51003\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-94.948466, 42.781639] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E30 MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EALBERT CITY\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E50510\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.303999, 42.675857] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E13 N MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EALTA\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51002\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-94.846002, 42.577539] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E106 S MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EFONDA\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E50540\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.905073, 43.07367] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E209 2ND AVE N\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EHOSPERS\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51238\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.178739, 42.965225] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E415 PINE ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EMAURICE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51036\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-94.673844, 43.110047] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E1800 11TH ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EEMMETSBURG\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E50536\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-95.54964, 42.943015] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E312 S RAILWAY AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ECALUMET\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51009\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.25003, 42.718301] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERicky\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ELundy\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E214 3RD ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EMERRILL\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E51038\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-92.536319, 42.947448] },
+      "properties": {
+        "name": "AG PARTNERS LLC",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERobert\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EWeigelt\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PARTNERS LLC\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E810 MAIN ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ENASHUA\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMT\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E59248\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-101.377708, 35.343536] },
+      "properties": {
+        "name": "AG PRODUCERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECameron\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMcAnally\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PRODUCERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E201 ELSIE AVE\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EPANHANDLE\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ETX\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E79068\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-100.789596, 36.395175] },
+      "properties": {
+        "name": "AG PRODUCERS COOP",
+        "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECameron\u003C/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMcAnally\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EAG PRODUCERS COOP\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E322 N JUNIPER ST\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EPERRYTON\u003C/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ETX\u003C/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E79070\u003C/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C/span\u003E\u003C/p\u003E"
+      }
+    }
+  ]
+}

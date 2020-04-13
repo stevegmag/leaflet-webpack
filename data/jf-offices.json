@@ -1,0 +1,527 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.60372380000001, 39.2857585]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "Bal'more - US Headquarters",
+        "address": "250 South President St, Suite 10, Baltimore, MD, 21202",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Office_Baltimore-335x479.jpg",
+        "name": "Baltimore, US",
+        "phone": "+1 443 842 5555",
+        "email": "BALTIMORE@JELLYFISH.COM",
+        "storeid": "01"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.05706599999996, 42.3503027]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "Bean Town",
+        "address": "745 Atlantic Ave, Boston, MA, 02111",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Boston-335x479.jpg",
+        "name": "Boston, US",
+        "phone": "+1 443 927 1669",
+        "email": "BOSTON@JELLYFISH.COM",
+        "storeid": "02"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.64894850000002, 41.8862222]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "Windy City",
+        "address": "Suite 5004, 220 N Green St., Chicago, IL 60607",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/07/Chicago-335x479.jpg",
+        "name": "Chicago, US",
+        "phone": "+1 443 927 1669",
+        "email": "CHICAGO@JELLYFISH.COM",
+        "storeid": "03"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.00239160000001, 39.75254959999999]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "The Mile High City",
+        "address": "Suite 3145, Triangle Building, 1550 Wewatta St., Denver, CO, 80202",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/07/Denver-335x479.jpg",
+        "name": "Denver, US",
+        "phone": "+1 443 927 1669",
+        "email": "DENVER@JELLYFISH.COM",
+        "storeid": "04"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.32330109999998, 34.0984715]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "LA - Tinseltown - La-La Land",
+        "address": "NeueHouse Hollywood, 6121 Sunset Blvd Los Angeles, CA 90028",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/12/LosAngeles-335x479.jpg",
+        "name": "Los Angeles, US",
+        "phone": "0844 488 1000",
+        "email": "LOSANGELES@JELLYFISH.COM",
+        "storeid": "05"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.99859370000001, 40.7228067]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "The Big Apple",
+        "address": "524 Broadway, Suite 8-113, New York, NY, 10012",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/New-York-335x479.jpg",
+        "name": "New York, US",
+        "phone": "+1 347 704 3590",
+        "email": "NEWYORK@JELLYFISH.COM",
+        "storeid": "06"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.36344, 38.958254]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "We have our own Ebola Strain - US Dev Center",
+        "address": "12120 Sunset Hills Road, Suite 150, Reston, VA, 20190",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Reston-335x479.jpg",
+        "name": "Reston, US",
+        "phone": "+1 703 340 2949",
+        "email": "RESTON@JELLYFISH.COM",
+        "storeid": "07"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.39734799999997, 37.7948167]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "San Fran - The City by the Bay - Bay City",
+        "address": "Three Embarcadero Center, Suite 610 San Francisco, California 94111",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/San-Fran-335x479.jpg",
+        "name": "San Francisco, US",
+        "phone": "+1 415 949 2016",
+        "email": "SANFRANCISCO@JELLYFISH.COM",
+        "storeid": "08"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-46.6681988, -23.5591617]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "BR",
+        "hours": "8am - 6pm",
+        "description": "Terra da Garoa (Land of Drizzle)",
+        "address": "Rua Melo Alves, 105 01417-010 São Paulo, Brazil",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2020/01/Brazil_office-335x479.jpg",
+        "name": "São Paulo, BR",
+        "phone": "+55 1130624551",
+        "email": "HELLO@JELLYFISH.COM",
+        "storeid": "09"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.14049290000002657, 50.8249857]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The Queen of Watering Places - The happiest place to live in the UK",
+        "address": "Sovereign House, Church Street, Brighton, East Sussex, BN1 1UJ",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Brighton-335x479.jpg",
+        "name": "Brighton, UK",
+        "phone": "+44 (0) 1273 838 216",
+        "email": "BRIGHTON@JELLYFISH.COM",
+        "storeid": "10"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.08664599999997336, 51.5045771]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The Shard - Global Headquarters",
+        "address": "Floor 22, The Shard, 32 London Bridge Street, London, SE1 9SG",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/London-335x479.jpg",
+        "name": "London, UK",
+        "phone": "+44 (0) 207 608 6700",
+        "email": "LONDON@JELLYFISH.COM",
+        "storeid": "11"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.20702800000003663, 51.2402166]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The First Office",
+        "address": "Jellyfish House, London Road, Reigate, Surrey, RH2 9SS",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Office_Reigate-335x479.jpg",
+        "name": "Reigate, UK",
+        "phone": "+44 (0) 1737 747 992",
+        "email": "REIGATE@JELLYFISH.COM",
+        "storeid": "12"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.5997365000000627, 53.3800883]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The Wire",
+        "address": "700 Mandarin Court, Warrington, Cheshire, WA1 1GG",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Warringotn-335x479.jpg",
+        "name": "Warrington, UK",
+        "phone": "+44 (0) 1925 944 686",
+        "email": "WARRINGTON@JELLYFISH.COM",
+        "storeid": "13"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.891942299999982, 52.3633496]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "NL",
+        "hours": "8am - 6pm",
+        "description": "Venice of the North - Mokum",
+        "address": "Vijzelstraat 68-78, 1017 HL Amsterdam, Netherlands",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/07/Amsterdam-335x479.jpg",
+        "name": "Amsterdam, NL",
+        "phone": "+44 1737 747 992",
+        "email": "NETHERLANDS@JELLYFISH.COM",
+        "storeid": "14"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.18205880000005, 41.3716984]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "ES",
+        "hours": "8am - 6pm",
+        "description": "Barna - Ciudad Condal",
+        "address": "World Trade Center, Edificio Norte, Barcelona, 08039",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Barcelona-1-335x479.jpg",
+        "name": "Barcelona, ES",
+        "phone": "+34 93 178 6250",
+        "email": "BARCELONA@JELLYFISH.COM",
+        "storeid": "15"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.4458798, 52.4999627]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "DE",
+        "hours": "8am - 6pm",
+        "description": "Die Hauptstaft (the capital)",
+        "address": "Cuvrystraße 3-4, 10997 Berlin, Germany",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2020/01/Germany_office-335x479.jpg",
+        "name": "Berlin, DE",
+        "phone": "+34 93 178 6250",
+        "email": "HELLO@JELLYFISH.COM",
+        "storeid": "16"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.572982799999977, 55.68294119999999]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "DK",
+        "hours": "8am - 6pm",
+        "description": "Merchant's Harbor",
+        "address": "Frederiksborggade 5, 1360, Copenhagen, Denmark",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Copenhagen-335x479.jpg",
+        "name": "Copenhagen, DK",
+        "phone": "+45 32 73 08 30",
+        "email": "DENMARK@JELLYFISH.COM",
+        "storeid": "17"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.7047702, 40.4179576]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "ES",
+        "hours": "8am - 6pm",
+        "description": "",
+        "address": "C/Preciados 7, 28007, Madrid, Spain",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2020/01/TradelabSpain-335x479.jpg",
+        "name": "Madrid, ES",
+        "phone": "+34 639 901 882",
+        "email": "MADRID@JELLYFISH.COM",
+        "storeid": "18"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.6931359999999813, 40.4377624]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "ES",
+        "hours": "8am - 6pm",
+        "description": "",
+        "address": "Calle Zurbano 73, 1a Planta 28010 Madrid",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Madrid-1-335x479.jpg",
+        "name": "Madrid, ES",
+        "phone": "+34 6399 01882",
+        "email": "MADRID@JELLYFISH.COM",
+        "storeid": "19"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.2048512, 45.4907056]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "IT",
+        "hours": "8am - 6pm",
+        "description": "Milano da bere (Milan to drink)",
+        "address": "Via Copernico 38, 20125 Milan",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2020/01/Italytradelab-335x479.jpg",
+        "name": "Milan, IT",
+        "phone": "+39 0287259252",
+        "email": "HELLO@JELLYFISH.COM",
+        "storeid": "20"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.070146099999988, -29.7345426]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "ZA",
+        "hours": "8am - 6pm",
+        "description": "",
+        "address": "1 Richefond Circle, Ridgeside Office Park, Umhlanga Ridge, Durban, 4319",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Office_Durban-335x479.jpg",
+        "name": "Durban, ZA",
+        "phone": "+27 31 100 2490",
+        "email": "DURBAN@JELLYFISH.COM",
+        "storeid": "21"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.0439357, -26.145843]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "ZA",
+        "hours": "8am - 6pm",
+        "description": "Jozi - JoBurg - The city of gold",
+        "address": "8th Floor Rosebank Link, 173 Oxford Rd, Johannesburg, 2196",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Office_Joburg-335x479.jpg",
+        "name": "Johannesburg, ZA",
+        "phone": "+27 10 500 6240",
+        "email": "JOHANNESBURG@JELLYFISH.COM",
+        "storeid": "22"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.152202999999986, 25.089777]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UAE",
+        "hours": "8am - 6pm",
+        "description": "City of Gold",
+        "address": "Media 1 Tower, Dubai Media City, Plot No. 1, Dubai, United Arab Emirates",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Dubai-335x479.jpg",
+        "name": "Dubai, UAE",
+        "phone": "+44 203 970 9737",
+        "email": "DUBAI@JELLYFISH.COM",
+        "storeid": "23"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.18211399999996, 22.278151]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "HK",
+        "hours": "8am - 6pm",
+        "description": "東方之珠 (Pearl of the Orient)",
+        "address": "31/F Tower Two Times Sq, Matheson Street, Causeway Bay, Hong Kong",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Hong-Kong-335x479.jpg",
+        "name": "Hong Kong, HK",
+        "phone": "+852 389 285 36",
+        "email": "HONGKONG@JELLYFISH.COM",
+        "storeid": "24"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.86503760000005, 19.0581209]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "IN",
+        "hours": "8am - 6pm",
+        "description": "Gateway of India - Formerly Bombay (the good bay)",
+        "address": "08B115, C-20, WeWork Enam Sambhav, G Block, Bandra Kurla Complex, Mumbai, 400051",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Mumbai-335x479.jpg",
+        "name": "Mumbai, IN",
+        "phone": "+91 (1800) 919 00867",
+        "email": "INDIA@JELLYFISH.COM",
+        "storeid": "25"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [127.0279977, 37.4959444]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "SKR",
+        "hours": "8am - 6pm",
+        "description": "The land of the morning calm",
+        "address": "373 Gangnam-daero, Seocho-dong, Seocho-gu, Seoul",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Seoul-1-335x479.jpg",
+        "name": "Seoul, SKR",
+        "phone": "+82 (2) 6410 8010",
+        "email": "SOUTHKOREA@JELLYFISH.COM",
+        "storeid": "26"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8490256, 1.2824439]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "SG",
+        "hours": "8am - 6pm",
+        "description": "The fine country - Lion City",
+        "address": "8 Cross Street #18-00 Singapore 048424",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Singapore1-335x479.jpg",
+        "name": "Singapore, SG",
+        "phone": "+65 69 71 64 40",
+        "email": "SINGAPORE@JELLYFISH.COM",
+        "storeid": "27"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.78690549999999, 32.084748]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "IL",
+        "hours": "8am - 6pm",
+        "description": "Nonstop City",
+        "address": "Tashah 2, Tel Aviv, Israel",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/07/Telaviv-1-335x479.jpg",
+        "name": "Tel Aviv, IL",
+        "phone": "+972 3 5222602",
+        "email": "ISRAEL@JELLYFISH.COM",
+        "storeid": "28"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7022732, 35.6582481]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "JP",
+        "hours": "8am - 6pm",
+        "description": "Electric Town",
+        "address": "Shibuya Scramble Square 39F, 2-24-12 Shibuya, Shibuya-ku, Tokyo",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/JF-Tokyo-1.jpg",
+        "name": "Tokyo, JP",
+        "phone": "+81 (3) 6332 7653",
+        "email": "JAPAN@JELLYFISH.COM",
+        "storeid": "29"
+      }
+    }
+  ]
+}

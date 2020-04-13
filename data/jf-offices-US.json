@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.60372380000001, 39.2857585]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "Bal'more - US Headquarters",
+        "address": "250 South President St, Suite 10, Baltimore, MD, 21202",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Office_Baltimore-335x479.jpg",
+        "name": "Baltimore, US",
+        "phone": "+1 443 842 5555",
+        "email": "BALTIMORE@JELLYFISH.COM",
+        "storeid": "01"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.05706599999996, 42.3503027]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "Bean Town",
+        "address": "745 Atlantic Ave, Boston, MA, 02111",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Boston-335x479.jpg",
+        "name": "Boston, US",
+        "phone": "+1 443 927 1669",
+        "email": "BOSTON@JELLYFISH.COM",
+        "storeid": "02"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.64894850000002, 41.8862222]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "Windy City",
+        "address": "Suite 5004, 220 N Green St., Chicago, IL 60607",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/07/Chicago-335x479.jpg",
+        "name": "Chicago, US",
+        "phone": "+1 443 927 1669",
+        "email": "CHICAGO@JELLYFISH.COM",
+        "storeid": "03"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.00239160000001, 39.75254959999999]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "The Mile High City",
+        "address": "Suite 3145, Triangle Building, 1550 Wewatta St., Denver, CO, 80202",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/07/Denver-335x479.jpg",
+        "name": "Denver, US",
+        "phone": "+1 443 927 1669",
+        "email": "DENVER@JELLYFISH.COM",
+        "storeid": "04"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.32330109999998, 34.0984715]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "LA - Tinseltown - La-La Land",
+        "address": "NeueHouse Hollywood, 6121 Sunset Blvd Los Angeles, CA 90028",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/12/LosAngeles-335x479.jpg",
+        "name": "Los Angeles, US",
+        "phone": "0844 488 1000",
+        "email": "LOSANGELES@JELLYFISH.COM",
+        "storeid": "05"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.99859370000001, 40.7228067]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "The Big Apple",
+        "address": "524 Broadway, Suite 8-113, New York, NY, 10012",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/New-York-335x479.jpg",
+        "name": "New York, US",
+        "phone": "+1 347 704 3590",
+        "email": "NEWYORK@JELLYFISH.COM",
+        "storeid": "06"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.36344, 38.958254]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "We have our own Ebola Strain - US Dev Center",
+        "address": "12120 Sunset Hills Road, Suite 150, Reston, VA, 20190",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Reston-335x479.jpg",
+        "name": "Reston, US",
+        "phone": "+1 703 340 2949",
+        "email": "RESTON@JELLYFISH.COM",
+        "storeid": "07"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.39734799999997, 37.7948167]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "US",
+        "hours": "8am - 6pm",
+        "description": "San Fran - The City by the Bay - Bay City",
+        "address": "Three Embarcadero Center, Suite 610 San Francisco, California 94111",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/San-Fran-335x479.jpg",
+        "name": "San Francisco, US",
+        "phone": "+1 415 949 2016",
+        "email": "SANFRANCISCO@JELLYFISH.COM",
+        "storeid": "08"
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.14049290000002657, 50.8249857]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The Queen of Watering Places - The happiest place to live in the UK",
+        "address": "Sovereign House, Church Street, Brighton, East Sussex, BN1 1UJ",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Brighton-335x479.jpg",
+        "name": "Brighton, UK",
+        "phone": "+44 (0) 1273 838 216",
+        "email": "BRIGHTON@JELLYFISH.COM",
+        "storeid": "10"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.08664599999997336, 51.5045771]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The Shard - Global Headquarters",
+        "address": "Floor 22, The Shard, 32 London Bridge Street, London, SE1 9SG",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/London-335x479.jpg",
+        "name": "London, UK",
+        "phone": "+44 (0) 207 608 6700",
+        "email": "LONDON@JELLYFISH.COM",
+        "storeid": "11"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.20702800000003663, 51.2402166]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The First Office",
+        "address": "Jellyfish House, London Road, Reigate, Surrey, RH2 9SS",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Office_Reigate-335x479.jpg",
+        "name": "Reigate, UK",
+        "phone": "+44 (0) 1737 747 992",
+        "email": "REIGATE@JELLYFISH.COM",
+        "storeid": "12"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.5997365000000627, 53.3800883]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "UK",
+        "hours": "8am - 6pm",
+        "description": "The Wire",
+        "address": "700 Mandarin Court, Warrington, Cheshire, WA1 1GG",
+        "image": "https://www.jellyfish.com/wp-content/uploads/2019/03/Warringotn-335x479.jpg",
+        "name": "Warrington, UK",
+        "phone": "+44 (0) 1925 944 686",
+        "email": "WARRINGTON@JELLYFISH.COM",
+        "storeid": "13"
+      }
+    }
+  ]
+}
