@@ -9,9 +9,9 @@ console.log('app loaded');
 let locationLayer;
 const maxListCnt = 4;
 const orgZoom = 8; //default/UK 7; US: 5;
-// center: [51.505, -0.09], // UK LONDON
-// center: { lat: 52.632469, lng: -1.689423 }, // UK
-// center: { lat: 39.0921017, lng: -96.8169365 }, // US KC
+// const orgCenter = [51.505, -0.09], // UK LONDON
+// const orgCenter = { lat: 52.632469, lng: -1.689423 }, // UK
+// const orgCenter = { lat: 39.0921017, lng: -96.8169365 }, // US KC
 const orgCenter = {lat: 39.168431, lng: -77.6062407}// US Lansdowne
 
 
@@ -25,7 +25,7 @@ const getLocations = (async () => {
   return locations;
 })(); //getStores
 
-// TODO: SG: sort data by distance from zip
+// TODO: SG: sort data by distance from zip and truncate to maxListCnt
 let sortData = (async () => {
     const sortData = await getLocations;
     console.log("sortData: sortData:: ", sortData);
@@ -57,60 +57,72 @@ let initMap = (() => {
     locationLayer = L.geoJSON().addTo(daMap);
 })();
 
-// TODO: SG: load data into map
+// TODO: SG: load all data into map
 let loadData = (async () => {    
     console.log("loadData: getLocations:: ", await getLocations);
     return locationLayer.addData(await getLocations);
 })();
 
-// TODO: SG: load sorted data (forst 10) into list
-// const showLocationList = (async () => {
-//   console.log("in showLocationList: 1");
-//   const locationOBJ = await sortData;
-//   const locationList = locationOBJ.features;
-//   console.log("storeList: ", locationList);
-//   if (locationList.length > 0) {
-//     let daNode = document.createElement("UL");
+// TODO: SG: distance diff
+const distanceBetween = (lat1, lon1, lat2, lon2) => {
+  var p = 0.017453292519943295;    // Math.PI / 180
+  var c = Math.cos;
+  var a = 0.5 - c((lat2 - lat1) * p)/2 + 
+          c(lat1 * p) * c(lat2 * p) * 
+          (1 - c((lon2 - lon1) * p))/2;
 
-//     for (location in locationList) {
-//       console.log("showLocationList: location:: ", location);
-//       const properties = locationList[location].properties;
+  return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+} // distanceBetween
 
-//       console.log("showLocationList: properties:: ", properties);
+// TODO: SG: load sorted data (maxListCnt) into list
+const showLocationList = (async () => {
+    console.log("in showLocationList: 1");
+    const locationOBJ = await sortData;
+    console.log("showLocationList: locationOBJ:: ", locationOBJ);
+    const locationList = locationOBJ.features;
+    console.log("showLocationList: locationList:: ", locationList);
+    locationListLen = locationList.length;
+    console.log("showLocationList: locationList:: locationListLen:: ", locationListLen);
+    if ( locationListLen > 0 ) {
+        let daNode = document.createElement("UL");
 
-//     //   const coords = locationList[location].geometry.coordinates;
-//     //   const name = properties.name;
-//     //   const description = properties.description;
-//     //   //const address = properties.address;
-//     //   //const hours = properties.hours;
-//     //   const phone = properties.phone;
-//     //   const email = properties.email;
-//     //   //const image = properties.image;
-//     //   //const position = event.feature.getGeometry().get();
+        for ( let location in locationList ) {
+            console.log("showLocationList: locationList:: location:: ", location);
+            const properties = locationList[location].properties;
+            console.log("showLocationList: properties:: ", properties);
 
-//     //   let loc = name.split(",");
-//     //   loc = loc[0].replace(" ", "-");
-//     //   //console.log("LOC: ", loc);
+            const coords = locationList[location].geometry.coordinates;
+            const name = properties.name;
+            const description = properties.description;
+            const address = properties.address;
+            //const hours = properties.hours;
+            const phone = properties.phone;
+            const email = properties.email;
+            //const image = properties.image;
+            //const position = event.feature.getGeometry().get();
 
-//     //   let daContent = document.createElement("li");
-//     //   let daText = String.raw`
-//     //       <a href="javascript: moveToLocation(${coords});scrollLocList('${loc}');">
-//     //       <h2 id="${loc}">${name}</h2>
-//     //       </a>
-//     //       <p>${description}</p>
-//     //       <p>${address}</p>
-//     //       <p>
-//     //         <strong>Open:</strong> ${hours}<br/>
-//     //         <strong>Phone:</strong> ${phone}<br/>
-//     //         <strong>Email:</strong> ${email}
-//     //       </p>
-//     //   `;
-//     //   daContent.innerHTML = daText;
-//     //   daNode.appendChild(daContent);
-//     // } // for
-//     // document.getElementById("location-list-panel").appendChild(daNode);
-//   } // if
-// })(); //showStoreList
+            let loc = name.split(",");
+            loc = loc[0].replace(" ", "-");
+            //console.log("LOC: ", loc);
+
+            let daContent = document.createElement("li");
+            let daText = String.raw`
+                <a href="javascript: moveToLocation(${coords});scrollLocList('${loc}');">
+                <h2 id="${loc}">${name}</h2>
+                </a>
+                <p>${description}</p>
+                <p>${address}</p>
+                <p>
+                    <strong>Phone:</strong> ${phone}<br/>
+                    <strong>Email:</strong> ${email}
+                </p>
+            `;
+            daContent.innerHTML = daText;
+            daNode.appendChild(daContent);
+        } // for
+        document.getElementById("location-list-panel").appendChild(daNode);
+    } // if
+})(); //showStoreList
 
 // TODO: SG: add click actions to map
 
