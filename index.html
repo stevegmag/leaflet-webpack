@@ -11,17 +11,34 @@
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
 
+    <script src="https://raw.github.com/mapbox/leaflet-knn/master/leaflet-knn.min.js" crossorigin=""></script>
+
    <style>
-   #leaflet-map { height: 400px; }
+       .app-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+       }
+   #leaflet-map { 
+        width: 800px;
+        height: 500px; 
+    }
+    #location-list-panel {
+        width: 240px;
+    }
    </style>
   </head>
 
   <body>
     <h1>Leaflet Retail Locator</h1>
     <!-- The div to hold the map -->
-    <div id="leaflet-map" style="width: 1280px; height: 800px;"></div>
-    <div id="location-list-panel"></div>
-   
+    <div class="app-container">
+        <div id="leaflet-map"></div>
+        <div id="location-list-panel"></div>
+   </div>
     <script src="src/app.js"></script>
   </body>
 </html>

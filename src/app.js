@@ -13,6 +13,15 @@ const orgZoom = 8; //default/UK 7; US: 5;
 // const orgCenter = { lat: 52.632469, lng: -1.689423 }, // UK
 // const orgCenter = { lat: 39.0921017, lng: -96.8169365 }, // US KC
 const orgCenter = {lat: 39.168431, lng: -77.6062407}// US Lansdowne
+const redIcon = L.icon({
+    iconUrl: './images/marker-icon-red.png',
+    iconSize: [25, 41],
+    iconAnchor: [25, 41],
+    popupAnchor: [-10, -51],
+    shadowUrl: './images/marker-shadow.png',
+    shadowSize: [25, 41],
+    shadowAnchor: [25, 41]
+});
 
 
 // TODO: SG: read in data 
@@ -26,9 +35,9 @@ const getLocations = (async () => {
 })(); //getStores
 
 // TODO: SG: sort data by distance from zip and truncate to maxListCnt
-let sortData = (async () => {
+const sortData = (async () => {
     const sortData = await getLocations;
-    console.log("sortData: sortData:: ", sortData);
+    console.log("sortData: sortData:: ", sortData);    
     sortTruncFeatures = Array.prototype.slice.call(sortData.features, maxListCnt);
     console.log("sortData: sortTrsortTruncFeaturesuncData:: ", sortTruncFeatures);
     sortData.features = sortTruncFeatures;
@@ -37,9 +46,9 @@ let sortData = (async () => {
 })();
 
 // TODO: SG: init map
-let initMap = (() => {
+const initMap = (() => {
     // create the map obj
-    let daMap = L.map('leaflet-map').setView(orgCenter, orgZoom);
+    const daMap = L.map('leaflet-map').setView(orgCenter, orgZoom);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
@@ -50,7 +59,7 @@ let initMap = (() => {
     }).addTo(daMap);
 
     // TODO: SG: add current zip marker to map
-    let orgMarker = L.marker(orgCenter).addTo(daMap);
+    const orgMarker = L.marker(orgCenter, {icon: redIcon}).addTo(daMap);
     orgMarker.bindPopup("<b>Your Current Location based on postal code.</b><br>Use form field to search on different postal code.").openPopup();
     
     // init dataLayer
@@ -58,16 +67,16 @@ let initMap = (() => {
 })();
 
 // TODO: SG: load all data into map
-let loadData = (async () => {    
+const loadData = (async () => {    
     console.log("loadData: getLocations:: ", await getLocations);
     return locationLayer.addData(await getLocations);
 })();
 
 // TODO: SG: distance diff
 const distanceBetween = (lat1, lon1, lat2, lon2) => {
-  var p = 0.017453292519943295;    // Math.PI / 180
-  var c = Math.cos;
-  var a = 0.5 - c((lat2 - lat1) * p)/2 + 
+  let p = 0.017453292519943295;    // Math.PI / 180
+  let c = Math.cos;
+  let a = 0.5 - c((lat2 - lat1) * p)/2 + 
           c(lat1 * p) * c(lat2 * p) * 
           (1 - c((lon2 - lon1) * p))/2;
 
