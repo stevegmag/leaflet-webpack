@@ -13,21 +13,32 @@
 }
 #location-list-panel {
     width: 240px;
+    height: 500px;
     margin: 0 0 0 0;
     padding: 0 0 0 20px;
 }
+#location-list-panel h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border-bottom: 2px solid #ccc;
+}
 #location-list-panel ul {
+    height: 450px;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     list-style: none;
+    overflow-y: scroll;
 }
 #location-list-panel ul li {
     margin: 0 0 10px 0;
-    padding: 10px 0;
+    padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+#location-list-panel ul li.active-loc {
+    background-color: #ddd;
+}
 #location-list-panel ul li:first-child {
-    padding: 0 0 10px 0;
+    padding: 0 10px 10px 10px;
 }
 #location-list-panel ul li:last-child {
     border-bottom: 0px solid #ccc;
@@ -42,7 +53,7 @@
     color: maroon;
 }
 
-#location-list-panel ul li a h2 {
+#location-list-panel ul li a h3 {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     font-size: 18px;
