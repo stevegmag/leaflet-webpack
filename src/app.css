@@ -1,0 +1,53 @@
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#leaflet-map { 
+    width: 800px;
+    height: 500px; 
+}
+#location-list-panel {
+    width: 240px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 20px;
+}
+#location-list-panel ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    list-style: none;
+}
+#location-list-panel ul li {
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+#location-list-panel ul li:first-child {
+    padding: 0 0 10px 0;
+}
+#location-list-panel ul li:last-child {
+    border-bottom: 0px solid #ccc;
+}
+#location-list-panel ul li a:link,
+#location-list-panel ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+#location-list-panel ul li a:active,
+#location-list-panel ul li a:hover {
+    color: maroon;
+}
+
+#location-list-panel ul li a h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 18px;
+}
+#location-list-panel ul li p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}

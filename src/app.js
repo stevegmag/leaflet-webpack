@@ -1,5 +1,4 @@
-
-console.log('app loaded');
+//console.log('app loaded');
 
 // TODO: SG: get orig zip
 
@@ -24,33 +23,55 @@ const redIcon = L.icon({
 });
 
 
-// TODO: SG: read in data 
+// FUNC: SG: read in data 
 const getLocations = (async () => {
-  // console.log("getLocs: in:: ");
-  const response = await fetch("./data/jf-offices-US.json");
-  //const response = await fetch("./data/retailers-geojson.json");
-  const locations = await response.json();
-  // console.log("getLocs: locations:: ", locations);
-  return locations;
+    // console.log("getLocations: in:: ");
+    //const response = await fetch("./data/jf-offices-US.json");
+    const response = await fetch("./data/retailers-geojson.json");
+    const locations = await response.json();
+    console.log("getLocations: locations:: ", locations);
+    return locations;
 })(); //getStores
 
 // TODO: SG: sort data by distance from zip and truncate to maxListCnt
-const sortData = (async () => {
-    const sortData = await getLocations;
-    console.log("sortData: sortData:: ", sortData);    
-    sortTruncFeatures = Array.prototype.slice.call(sortData.features, maxListCnt);
-    console.log("sortData: sortTrsortTruncFeaturesuncData:: ", sortTruncFeatures);
-    sortData.features = sortTruncFeatures;
-    console.log("sortData: sortData:: ", sortData);
+const sortDataByZip = (locationOBJ) => {
+    //console.log("sortDataByZip: locationOBJ:: ", locationOBJ);
+    let sortData = {...locationOBJ}; 
+    //console.log("sortDataByZip: sortData:: ", sortData);
+    //console.log("sortDataByZip: sortData length:: ", sortData.features.length);
+    
+    // add distance from zip to features properties
+    sortDataLen = sortData.features.length;
+    for (let x=0; x<sortDataLen; x++) {
+        let testCords = sortData.features[x].geometry.coordinates;
+        console.log("sortDataByZip: location:: ", sortData.features[x].properties.name);
+        console.log("sortDataByZip: testCords:: ", testCords);
+        distance = distanceBetween(orgCenter.lat, orgCenter.lng, testCords[1], testCords[0]);
+        console.log("sortDataByZip: distance:: ", distance);
+        sortData.features[x].properties.distance = distance;
+    } //for
+    let nestedSort = (prop1, prop2 = null, direction = 'asc') => (e1, e2) => {
+    const a = prop2 ? e1[prop1][prop2] : e1[prop1],
+        b = prop2 ? e2[prop1][prop2] : e2[prop1],
+        sortOrder = direction === "asc" ? 1 : -1
+    return (a < b) ? -sortOrder : (a > b) ? sortOrder : 0;
+    }
+
+    sortData.features.sort(nestedSort("properties", "distance", "asc"));
+
+    //console.log("sortDataByZip: sorted sortData:: ", sortData);
+    // truncate list to 
+    sortData.features = sortData.features.slice(0, maxListCnt); 
     return sortData;
-})();
+}; //sortDataByZip
+
 
 // TODO: SG: init map
 const initMap = (() => {
     // create the map obj
     const daMap = L.map('leaflet-map').setView(orgCenter, orgZoom);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
         id: 'mapbox/streets-v11',
         tileSize: 512,
@@ -68,8 +89,15 @@ const initMap = (() => {
 
 // TODO: SG: load all data into map
 const loadData = (async () => {    
-    console.log("loadData: getLocations:: ", await getLocations);
+    //console.log("loadData: getLocations:: ", await getLocations);
+
+    const onEachFeature = (feature, layer) => {
+        if (feature.properties && feature.properties.popupContent) {
+            layer.bindPopup(feature.properties.popupContent);
+        }
+    };
     return locationLayer.addData(await getLocations);
+
 })();
 
 // TODO: SG: distance diff
@@ -85,13 +113,14 @@ const distanceBetween = (lat1, lon1, lat2, lon2) => {
 
 // TODO: SG: load sorted data (maxListCnt) into list
 const showLocationList = (async () => {
-    console.log("in showLocationList: 1");
-    const locationOBJ = await sortData;
-    console.log("showLocationList: locationOBJ:: ", locationOBJ);
-    const locationList = locationOBJ.features;
-    console.log("showLocationList: locationList:: ", locationList);
+    //console.log("in showLocationList: 1");
+    const locationOBJ = await getLocations;
+    const locationOBJSorted = await sortDataByZip(locationOBJ);
+    //console.log("showLocationList: locationOBJSorted:: ", locationOBJSorted);
+    const locationList = locationOBJSorted.features;
+    //console.log("showLocationList: locationList:: ", locationList);
     locationListLen = locationList.length;
-    console.log("showLocationList: locationList:: locationListLen:: ", locationListLen);
+    //console.log("showLocationList: locationList:: locationListLen:: ", locationListLen);
     if ( locationListLen > 0 ) {
         let daNode = document.createElement("UL");
 
@@ -107,6 +136,7 @@ const showLocationList = (async () => {
             //const hours = properties.hours;
             const phone = properties.phone;
             const email = properties.email;
+            const distance = Math.round( properties.distance );
             //const image = properties.image;
             //const position = event.feature.getGeometry().get();
 
@@ -121,6 +151,7 @@ const showLocationList = (async () => {
                 </a>
                 <p>${description}</p>
                 <p>${address}</p>
+                <p><strong>Distance:</strong> ${distance} miles</p>
                 <p>
                     <strong>Phone:</strong> ${phone}<br/>
                     <strong>Email:</strong> ${email}
@@ -131,8 +162,7 @@ const showLocationList = (async () => {
         } // for
         document.getElementById("location-list-panel").appendChild(daNode);
     } // if
-})(); //showStoreList
-
+})(); //showLocationList
 // TODO: SG: add click actions to map
 
 // TODO: SG: add click actions to list
