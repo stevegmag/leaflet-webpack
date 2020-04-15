@@ -1,4 +1,5 @@
 //console.log('app loaded');
+import './app.scss';
 
 // TODO: SG: get orig zip
 

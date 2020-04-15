@@ -1,0 +1,68 @@
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#leaflet-map { 
+    width: 800px;
+    height: 500px; 
+}
+#location-list-panel {
+    width: 240px;
+    height: 500px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 20px;
+    
+    h2 {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        border-bottom: 2px solid #ccc;
+    }
+    ul {
+        height: 450px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        list-style: none;
+        overflow-y: scroll;
+        
+        li {
+            margin: 0 0 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            
+            &.active-loc {
+                background-color: #ddd;
+            }
+            &:first-child {
+                padding: 0 10px 10px 10px;
+            }
+            &:last-child {
+                border-bottom: 0px solid #ccc;
+            }
+
+            a:link,
+            a:visited {
+                text-decoration: none;
+                color: black;
+            }
+            a:active,
+            a:hover {
+                color: maroon;
+            }
+
+            a h3 {
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+                font-size: 18px;
+            }
+            p {
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+            }
+        }
+    }
+}

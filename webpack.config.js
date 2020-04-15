@@ -1,29 +1,44 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
     output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
     },
     mode: 'none',
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                sourceMap: true,
+                extractComments: 'all',
+                chunkFilter: (chunk) => {
+                    // Exclude uglification for the `vendor` chunk
+                    if ((chunk.name === 'vendor') || (chunk.name === 'node_modules') ) {
+                        return false;
+                    }
+
+                    return true;
+                },
+            }),
+        ],
+    },
     module: {
         rules: [
-            {
-                test: /\.js$/,
+            { test: /\.js$/,
                 exclude: [/(node_modules)/, /(vendor)/],
                 use: {
                     loader: 'babel-loader',
                     options: {
-                    presets: ['@babel/preset-env']
+                        presets: ['@babel/preset-env']
                     }
                 }
-            }
-            {
-                // Apply rule for .sass, .scss or .css files
-                test: /\.(sa|sc|c)ss$/,
-
+            },
+            { test: /\.(sa|sc|c)ss$/,
+            // Apply rule for .sass, .scss or .css files
+                
                 // Set loaders to transform files.
                 // Loaders are applying from right to left(!)
                 // The first loader will be applied after others
@@ -48,8 +63,7 @@ module.exports = {
                         }
                     ]
             },
-            {
-                test: /\.(png|jpe?g|gif|svg)$/,
+            { test: /\.(png|jpe?g|gif|svg)$/,
                 use: [
                     {
                         loader: "file-loader",
@@ -59,8 +73,7 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test: /\.(woff|woff2|ttf|otf|eot)$/,
+            { test: /\.(woff|woff2|ttf|otf|eot)$/,
                 use: [
                     {
                         loader: "file-loader",
@@ -75,7 +88,7 @@ module.exports = {
     
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "bundle.css"
+            filename: "main.css"
         })
     ]
 };
