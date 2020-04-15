@@ -1,0 +1,226 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.36506,
+                    38.95473
+                ]
+            },
+            "properties": {
+                "name": "Test Retailer",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022organization\u0022\u003ETest Retailer\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E12120 Sunset Hills Rd\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EReston\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EVA\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E20190\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "test@example.com",
+                "nid": "6193",
+                "field_retailer_telephone": "703-555-1212"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.64306,
+                    40.508819
+                ]
+            },
+            "properties": {
+                "name": " FRENCHMAN VALLEY FARMERS COOP ",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMason\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EHansen\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E FRENCHMAN VALLEY FARMERS COOP \u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E101 S DOUGLAS\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EIMPERIAL\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENE\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E69033\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "Mason.Hansen@fmc.com",
+                "nid": "16119",
+                "field_retailer_telephone": "308-882-3224"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -94.762966,
+                    41.257579
+                ]
+            },
+            "properties": {
+                "name": "21ST CENTURY COOP",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EClayton\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMuller\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E21ST CENTURY COOP\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E74757 RICHLAND RD\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EMASSENA\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E50853\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "clayton.muller@fmc.com",
+                "nid": "16120",
+                "field_retailer_telephone": "(712) 779-3515"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.543443,
+                    33.666812
+                ]
+            },
+            "properties": {
+                "name": "2K AGRI SERVICES INC",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ECameron\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMcAnally\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E2K AGRI SERVICES INC\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E201 HIGHWAY 62\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELORENZO\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ETX\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E79343\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "cameron.mcanally@fmc.com",
+                "nid": "16121",
+                "field_retailer_telephone": "(806) 634-5500"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -102.972173,
+                    41.234081
+                ]
+            },
+            "properties": {
+                "name": "308 AG, LLC",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERobert\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ERainey\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E308 AG, LLC\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E3281 US HIGHWAY 385\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESIDNEY\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENE\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E69162\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "Robert.Rainey@fmc.com",
+                "nid": "16122",
+                "field_retailer_telephone": "3088831596"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.545537,
+                    44.885901
+                ]
+            },
+            "properties": {
+                "name": "4 SEASONS COOPERATIVE",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EWhitney\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETolzin\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E4 SEASONS COOPERATIVE\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E38394 US HIGHWAY 212\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EREDFIELD\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ESD\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E57469\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "whitney.tolzin@fmc.com",
+                "nid": "16123",
+                "field_retailer_telephone": "(605) 472-2357"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.101457,
+                    44.89262
+                ]
+            },
+            "properties": {
+                "name": "4 SEASONS COOPERATIVE",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EWhitney\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETolzin\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E4 SEASONS COOPERATIVE\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E201 3RD ST S\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EDOLAND\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ESD\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E57436\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "whitney.tolzin@fmc.com",
+                "nid": "16124",
+                "field_retailer_telephone": "(605) 635-6111"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.74728,
+                    45.79157
+                ]
+            },
+            "properties": {
+                "name": "4 SEASONS COOPERATIVE",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EWhitney\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ETolzin\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003E4 SEASONS COOPERATIVE\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E520 VANDER HORCK\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EBRITTON\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ESD\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E57430\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "whitney.tolzin@fmc.com",
+                "nid": "16125",
+                "field_retailer_telephone": "(605) 448-2231"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -92.282471,
+                    43.448416
+                ]
+            },
+            "properties": {
+                "name": "A \u0026amp; K FEED \u0026amp; GRAIN CO",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EDane\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EReiter\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA \u0026amp; K FEED \u0026amp; GRAIN CO\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E120 CENTER ST\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ELIME SPRINGS\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EIA\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E52155\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "dane.reiter@fmc.com",
+                "nid": "16126",
+                "field_retailer_telephone": "(563) 566-2291"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -92.178499,
+                    44.162927
+                ]
+            },
+            "properties": {
+                "name": "A A FERTILIZER CO INC",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EBeth\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EStoll\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA A FERTILIZER CO INC\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E900 2ND AVE SW\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EPLAINVIEW\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EMN\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E55964\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "Beth.Stoll@fmc.com",
+                "nid": "16127",
+                "field_retailer_telephone": "(507) 534-2261"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.993253,
+                    40.494052
+                ]
+            },
+            "properties": {
+                "name": "A G BOOGHER \u0026amp; SON",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ERyan\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EMcDaniel\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA G BOOGHER \u0026amp; SON\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E10736 SANTA FE LINE RD\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EWAPAKONETA\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003EOH\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E45895\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "Ryan.McDaniel@fmc.com",
+                "nid": "16128",
+                "field_retailer_telephone": "9378434841"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.579766,
+                    35.240643
+                ]
+            },
+            "properties": {
+                "name": "A HARVEYS COMPANY",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003EMichael\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003ECunnane\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA HARVEYS COMPANY\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E2755 UNION GROVE CHURCH RD\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003EDUNN\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ENC\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E28334\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "Michael.Cunnane@fmc.com",
+                "nid": "16129",
+                "field_retailer_telephone": "(910) 892-2025"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.453824,
+                    29.688828
+                ]
+            },
+            "properties": {
+                "name": "A1 SPRAYING INC.",
+                "description": "\u003Cp class=\u0022address\u0022 translate=\u0022no\u0022\u003E\u003Cspan class=\u0022given-name\u0022\u003ELynette\u003C\/span\u003E \u003Cspan class=\u0022family-name\u0022\u003EHolm\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022organization\u0022\u003EA1 SPRAYING INC.\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022address-line1\u0022\u003E26169 US 281\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022locality\u0022\u003ESTICKNEY\u003C\/span\u003E, \u003Cspan class=\u0022administrative-area\u0022\u003ESD\u003C\/span\u003E \u003Cspan class=\u0022postal-code\u0022\u003E57375\u003C\/span\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022country\u0022\u003EUnited States\u003C\/span\u003E\u003C\/p\u003E",
+                "field_retailer_email": "Lynn.holm@fmc.com",
+                "nid": "16130",
+                "field_retailer_telephone": "(605) 732-4455"
+            }
+        }
+    ]
+}

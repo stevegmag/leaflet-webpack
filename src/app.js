@@ -1,5 +1,4 @@
 //console.log('app loaded');
-import './app.scss';
 
 // TODO: SG: get orig zip
 
@@ -16,11 +15,11 @@ const orgZoom = 8; //default/UK 7; US: 5;
 // const orgCenter = { lat: 39.0921017, lng: -96.8169365 }, // US KC
 const orgCenter = {lat: 39.168431, lng: -77.6062407}// US Lansdowne
 const redIcon = L.icon({
-    iconUrl: './images/marker-icon-red.png',
+    iconUrl: '../images/marker-icon-red.png',
     iconSize: [25, 41],
     iconAnchor: [25, 41],
     popupAnchor: [-10, -51],
-    shadowUrl: './images/marker-shadow.png',
+    shadowUrl: '../images/marker-shadow.png',
     shadowSize: [25, 41],
     shadowAnchor: [25, 41]
 }); //redIcon
@@ -29,8 +28,9 @@ const redIcon = L.icon({
 const getLocations = (async () => {
     // console.log("getLocations: in:: ");
     //const response = await fetch("./data/jf-offices-US.json");
-    const response = await fetch("./data/retailers-geojson.json");
-    //const response = await fetch("./data/retailers-geojson-150.json");
+    //const response = await fetch("../data/retailers-geojson.json");
+    //const response = await fetch("../data/retailers-geojson-150.json");
+    const response = await fetch("/us/en/api/retailers.json");
     const locations = await response.json();
     //console.log("getLocations: locations:: ", locations);
     return locations;
@@ -44,12 +44,13 @@ const sortDataByZip = (locationOBJ) => {
     //console.log("sortDataByZip: sortData length:: ", sortData.features.length);
     
     // add distance from zip to features properties
-    sortDataLen = sortData.features.length;
+    const sortDataLen = sortData.features.length;
+    //console.log("sortDataByZip: sortData sortDataLen:: ", sortDataLen);
     for (let x=0; x<sortDataLen; x++) {
         let testCords = sortData.features[x].geometry.coordinates;
         //console.log("sortDataByZip: location:: ", sortData.features[x].properties.name);
         //console.log("sortDataByZip: testCords:: ", testCords);
-        distance = distanceBetween(orgCenter.lat, orgCenter.lng, testCords[1], testCords[0]);
+        let distance = distanceBetween(orgCenter.lat, orgCenter.lng, testCords[1], testCords[0]);
         //console.log("sortDataByZip: distance:: ", distance);
         sortData.features[x].properties.distance = distance;
     } //for
@@ -70,7 +71,7 @@ const sortDataByZip = (locationOBJ) => {
 
 // FUNC: SG: init map
 const initMap = (() => {
-    // create the map obj
+    // create the map obj assign above
     daMap = L.map('leaflet-map').setView(orgCenter, orgZoom);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -114,7 +115,7 @@ const showLocationList = (async () => {
     //console.log("showLocationList: locationOBJSorted:: ", locationOBJSorted);
     const locationList = locationOBJSorted.features;
     //console.log("showLocationList: locationList:: ", locationList);
-    locationListLen = locationList.length;
+    const locationListLen = locationList.length;
     //console.log("showLocationList: locationList:: locationListLen:: ", locationListLen);
     if ( locationListLen > 0 ) {
         let daHeader = document.createElement("h2");
@@ -204,7 +205,7 @@ const moveToLocation = (lng, lat) => {
   daMap.panTo(new L.LatLng(lat, lng));
 }; //moveToLocation
 
-const scrollListLoc = async (loc) => {
+const scrollListLoc = (loc) => {
   //console.log("scrollListLoc loc: ", loc);
   let daClass = "active-loc";
   let listItems = document.getElementsByClassName("location-list-item");
@@ -212,15 +213,15 @@ const scrollListLoc = async (loc) => {
   let listItemsLen = listItems.length;
     //console.log("scrollListLoc listItems.length: ", listItemsLen);
   // turn em all off
-  for (i = 0; i < listItemsLen; i++) {
+  for (let i = 0; i < listItemsLen; i++) {
     //console.log("scrollListLoc loc: ", listItems[i]);
     listItems[i].classList.remove(daClass);
-  }
+  } //for
 
   //highlight clicked
   let el = document.getElementById(loc);
   //console.log("scrollListLoc el: ", el);
-  if (el ) {
+  if (el) {
     let parentEl = el.parentNode.parentNode;
     if (!parentEl.classList.contains(daClass)) {
         parentEl.classList.add(daClass);
@@ -228,6 +229,3 @@ const scrollListLoc = async (loc) => {
     el.scrollIntoView();
   } else { alert(`location not in top ${maxListCnt} retailers list.`)}
 }; //scrollLocList
-
-
-// TODO: SG: get new zip from form

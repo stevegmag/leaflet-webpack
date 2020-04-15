@@ -1,7 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
 module.exports = {
     entry: './src/app.js',
     output: {
@@ -11,18 +10,19 @@ module.exports = {
     mode: 'none',
     optimization: {
         minimizer: [
-            new UglifyJsPlugin({
-                sourceMap: true,
-                extractComments: 'all',
-                chunkFilter: (chunk) => {
-                    // Exclude uglification for the `vendor` chunk
-                    if ((chunk.name === 'vendor') || (chunk.name === 'node_modules') ) {
-                        return false;
-                    }
-
-                    return true;
-                },
-            }),
+            // new UglifyJsPlugin({
+            //     uglifyOptions: {
+            //         warnings: false,
+            //         parse: {},
+            //         compress: {},
+            //         mangle: true, // Note `mangle.properties` is `false` by default.
+            //         output: null,
+            //         toplevel: false,
+            //         nameCache: null,
+            //         ie8: false,
+            //         keep_fnames: false,
+            //     }
+            // })
         ],
     },
     module: {
@@ -85,10 +85,10 @@ module.exports = {
             }
         ]
     },
-    
     plugins: [
         new MiniCssExtractPlugin({
             filename: "main.css"
-        })
+        }),
+        //new UglifyJsPlugin()
     ]
 };
