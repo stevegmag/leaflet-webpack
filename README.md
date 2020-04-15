@@ -12,3 +12,6 @@ https://stackoverflow.com/questions/5073799/how-to-sort-a-javascript-array-of-ob
 
 Slice Obj:
 https://stackoverflow.com/questions/39336556/how-can-i-slice-an-object-in-javascript
+
+get Distance script:
+https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula

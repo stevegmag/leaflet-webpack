@@ -4,7 +4,7 @@
 
 // TODO: SG: convert zip to lat, lng
 
-// TODO: SG: set defaults and globals
+// VARS: SG: set defaults and globals
 let daMap;
 let locationLayer;
 let popup;
@@ -35,7 +35,7 @@ const getLocations = (async () => {
     return locations;
 })(); //getStores
 
-// TODO: SG: sort data by distance from zip and truncate to maxListCnt
+// FUNC: SG: sort data by distance from zip and truncate to maxListCnt
 const sortDataByZip = (locationOBJ) => {
     //console.log("sortDataByZip: locationOBJ:: ", locationOBJ);
     let sortData = {...locationOBJ}; 
@@ -88,7 +88,7 @@ const initMap = (() => {
     locationLayer = L.geoJSON().addTo(daMap);
 })(); //initMap
 
-// TODO: SG: load all data into map
+// FUNC: SG: load all data into map
 const loadData = (async () => {    
     //console.log("loadData: getLocations:: ", await getLocations);
     return locationLayer.addData(await getLocations);
@@ -162,7 +162,7 @@ const showLocationList = (async () => {
     } // if
 })(); //showLocationList
 
-// TODO: SG: add click actions to map
+// FUNC: SG: add click actions to map
 const clickActionMap = (async () => {
     //console.log("clickActionMap: in::");
     let daData = await loadData;
@@ -196,7 +196,7 @@ const clickActionMap = (async () => {
     });
 })(); //clickActionMap
 
-// TODO: SG: add click actions to list
+// FUNC: SG: add click actions to list
 
 const moveToLocation = (lng, lat) => {
   //console.log("moveToLocation>> coords: ", lng, lat);
