@@ -1,0 +1,16 @@
+node_modules/
+vendor/
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+
+#temp directory
+temp/*
+
+!*/README.md
+
+contrib/
+dist/
+
