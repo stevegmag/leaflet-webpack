@@ -69,6 +69,7 @@
             margin: 0 0 0 0;
             padding: 0 0 0 0;
             list-style: none;
+            list-style-type: none;
             overflow-y: scroll;
         }
         
@@ -76,6 +77,8 @@
             margin: 0 0 10px 0;
             padding: 10px;
             border-bottom: 1px solid #ccc;
+            list-style-type: none;
+            background: none;
             
             &.active-loc {
                 background-color: #f3f1ee;

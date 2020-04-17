@@ -1,3 +1,19 @@
+
+
+## environment configuration:
+```bash
+git clone {repo}
+git remote add upstream  {reop}
+git remote set-url upstream --push no-pushing
+git remote -v
+# (confirm the above configuration)
+```
+
+```bash
+npm i
+npm run watch\
+```
+
 opensource Leaflet: 
 https://leafletjs.com/
 

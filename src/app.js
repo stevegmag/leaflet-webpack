@@ -43,7 +43,8 @@ const orgCenter = (() => {
         // const orgCenter = [51.505, -0.09], // UK LONDON
         // const orgCenter = { lat: 52.632469, lng: -1.689423 }, // UK
         // const orgCenter = { lat: 39.0921017, lng: -96.8169365 }, // US KC
-        return {lat: 39.168431, lng: -77.6062407}// US Lansdowne
+        // const orgCenter = {lat: 39.168431, lng: -77.6062407}// US Lansdowne
+        return { lat: 39.0921017, lng: -96.8169365 }, // US KC
     }
     console.log("orgCenter: ", orgCenter);
 })();
