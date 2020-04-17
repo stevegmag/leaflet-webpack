@@ -8,18 +8,53 @@
 let daMap;
 let locationLayer;
 let popup;
+const site =(() => {    
+    let daSite = window.location.hostname;
+    daSite = daSite.indexOf('127.0.0.1');
+    return (daSite > -1)?'localhost':'notLocalhost';
+})();
+const redIconURL = (site == 'localhost')?
+    '../dist/images/marker-icon-red.png':
+    '/themes/custom/fmc/dist/images/marker-icon-red.png';
+const redShadowURL = (site == 'localhost')?
+    '../dist/images/marker-shadow.png':
+    '/themes/custom/fmc/dist/images/marker-shadow.png';
+const countryCode = (() => {
+    let daPath = window.location.pathname;
+    daPath = daPath.indexOf('/us/');
+    return (daPath > -1)?'us':'nonus';
+})();
+const distanceUnit = (countryCode == "us")? "mi" : "km";
 const maxListCnt = 10;
 const orgZoom = 8; //default/UK 7; US: 5;
-// const orgCenter = [51.505, -0.09], // UK LONDON
-// const orgCenter = { lat: 52.632469, lng: -1.689423 }, // UK
-// const orgCenter = { lat: 39.0921017, lng: -96.8169365 }, // US KC
-const orgCenter = {lat: 39.168431, lng: -77.6062407}// US Lansdowne
+const zoomZoom = 12;
+// TODO: SG: add variables from twig file
+const orgCenter = (() => {
+    if (
+        (typeof(remote_lat) !== 'undefined') && 
+        (typeof(remote_lng) !== 'undefined')
+    ) {
+        return {
+            'lat': remote_lat,
+            'lng': remote_lng
+        };
+    }
+    else {
+        // const orgCenter = [51.505, -0.09], // UK LONDON
+        // const orgCenter = { lat: 52.632469, lng: -1.689423 }, // UK
+        // const orgCenter = { lat: 39.0921017, lng: -96.8169365 }, // US KC
+        return {lat: 39.168431, lng: -77.6062407}// US Lansdowne
+    }
+    console.log("orgCenter: ", orgCenter);
+})();
 const redIcon = L.icon({
-    iconUrl: '../images/marker-icon-red.png',
+    //iconUrl: '../dist/images/marker-icon-red.png',
+    iconUrl: redIconURL,
     iconSize: [25, 41],
     iconAnchor: [25, 41],
     popupAnchor: [-10, -51],
-    shadowUrl: '../images/marker-shadow.png',
+    //shadowUrl: '../dist/images/marker-shadow.png',
+    shadowUrl: redShadowURL,
     shadowSize: [25, 41],
     shadowAnchor: [25, 41]
 }); //redIcon
@@ -98,13 +133,14 @@ const loadData = (async () => {
 
 // FUNC: SG: distance diff
 const distanceBetween = (lat1, lon1, lat2, lon2) => {
-  let p = 0.017453292519943295;    // Math.PI / 180
-  let c = Math.cos;
-  let a = 0.5 - c((lat2 - lat1) * p)/2 + 
-          c(lat1 * p) * c(lat2 * p) * 
-          (1 - c((lon2 - lon1) * p))/2;
-
-  return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+    let r = (countryCode == "us")? 3959 : 6371; //miles : km
+    let R = (2*r);
+    let p = 0.017453292519943295; // Math.PI / 180
+    let c = Math.cos;
+    let a = 0.5 - c((lat2 - lat1) * p)/2 + 
+            c(lat1 * p) * c(lat2 * p) * 
+            (1 - c((lon2 - lon1) * p))/2;
+    return R * Math.asin(Math.sqrt(a));
 } // distanceBetween
 
 // FUNC: SG: load sorted data (maxListCnt) into list
@@ -145,15 +181,17 @@ const showLocationList = (async () => {
 
             let daContent = document.createElement("li");
             daContent.classList.add("location-list-item");
-            let daText = String.raw`
-                <a href="javascript: moveToLocation(${coords});scrollListLoc('${loc}');">
-                <h3 id="${loc}">${name}</h3>
-                </a>
+            //<a href="#" oclick="moveToLocation(${coords});scrollListLoc('${loc}'); return false;">
+                  
+            let daText = String.raw`                
+                <h3 id="${loc}"><a href="#" onclick="return false;" data-coords="${coords}" data-loc="${loc}">
+              ${name}</a></h3>
+                
                 <p>${description}</p>
-                <p><strong>Distance:</strong> ~ ${distance} miles</p>
+                <p><strong>Distance:</strong> ~ ${distance} ${distanceUnit}</p>
                 <p>
                     <strong>Phone:</strong> ${phone}<br/>
-                    <strong>Email:</strong> ${email}
+                    <strong>Email:</strong> <a href="mailto:${email}">${email}</a>
                 </p>
             `;
             daContent.innerHTML = daText;
@@ -162,6 +200,7 @@ const showLocationList = (async () => {
         document.getElementById("location-list-panel").appendChild(daHeader);
         document.getElementById("location-list-panel").appendChild(daNode);
     } // if
+    bindListAction();
 })(); //showLocationList
 
 // FUNC: SG: add click actions to map
@@ -188,7 +227,7 @@ const clickActionMap = (async () => {
                 <p>${desc}</p>
                 <p>
                     <strong>Phone:</strong> ${phone}<br/>
-                    <strong>Email:</strong> ${email}
+                    <strong>Email:</strong> <a href="mailto:${email}">${email}</a>
                 </p>
         `);
         layers[key].on('click', (ev) => { 
@@ -202,7 +241,8 @@ const clickActionMap = (async () => {
 
 const moveToLocation = (lng, lat) => {
   //console.log("moveToLocation>> coords: ", lng, lat);
-  daMap.panTo(new L.LatLng(lat, lng));
+  daMap.closePopup();
+  daMap.flyTo(new L.LatLng(lat, lng), zoomZoom);
 }; //moveToLocation
 
 const scrollListLoc = (loc) => {
@@ -222,10 +262,31 @@ const scrollListLoc = (loc) => {
   let el = document.getElementById(loc);
   //console.log("scrollListLoc el: ", el);
   if (el) {
-    let parentEl = el.parentNode.parentNode;
+    let parentEl = el.parentNode;
     if (!parentEl.classList.contains(daClass)) {
         parentEl.classList.add(daClass);
     }
     el.scrollIntoView();
-  } else { alert(`location not in top ${maxListCnt} retailers list.`)}
+  } else { alert(`This location not in top ${maxListCnt} retailers list.`)}
 }; //scrollLocList
+
+// FUNC: SG: Bind list click action
+const bindListAction = () => {         
+    const listItems = document.getElementsByClassName("location-list-item");
+    const listItemsLen = listItems.length;
+    for (let i = 0; i < listItemsLen; i++) {   
+           
+        listItems[i].addEventListener('click', e => {
+            // console.log('location-list-item', e.target.dataset);
+            let dataCoords = (e.target.dataset.coords).split(',');
+            let dataLoc = e.target.dataset.loc;
+            // console.log("bindListAction:: click: coords:: ", dataCoords);
+            // console.log("bindListAction:: click: loc:: ", dataLoc);
+
+            scrollListLoc(dataLoc);
+            moveToLocation(dataCoords[0],dataCoords[1]);
+
+            return false;
+        });
+    }
+};

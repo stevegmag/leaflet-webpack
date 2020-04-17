@@ -1,3 +1,9 @@
+@media (max-width: 767.98px) {    
+    #block-fmc-local-tasks {
+      display: none;
+    }
+}
+
 
 .app-container {
     display: flex;
@@ -6,21 +12,50 @@
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 }
 #leaflet-map { 
     width: 800px;
     height: 500px; 
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      height: 250px;
+      margin: 0 0 20px 0;
+    }
+
+
+    .leaflet-popup-content,
+    .leaflet-popup-pane {
+      width: 75%;
+
+        h2 {
+            font-size: 18px;
+        }
+    }
 }
 #location-list-panel {
     width: 240px;
     height: 500px;
     margin: 0 0 0 0;
     padding: 0 0 0 20px;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      height: auto;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+    }
     
     h2 {
         margin: 0 0 0 0;
         padding: 0 0 0 0;
         border-bottom: 2px solid #ccc;
+        font-size: 18px;
     }
     ul {
         height: 450px;
@@ -28,6 +63,14 @@
         padding: 0 0 0 0;
         list-style: none;
         overflow-y: scroll;
+
+        @media (max-width: 767.98px) {
+            height: auto;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            list-style: none;
+            overflow-y: scroll;
+        }
         
         li {
             margin: 0 0 10px 0;
@@ -35,7 +78,7 @@
             border-bottom: 1px solid #ccc;
             
             &.active-loc {
-                background-color: #ddd;
+                background-color: #f3f1ee;
             }
             &:first-child {
                 padding: 0 10px 10px 10px;
@@ -54,14 +97,25 @@
                 color: maroon;
             }
 
-            a h3 {
+            h3 {
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
-                font-size: 18px;
+                font-size: 14px;
             }
             p {
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
+                font-size: 14px;
+
+                a:link,
+                a:visited {
+                    text-decoration: none;
+                    color: #0078A8;
+                }
+                a:active,
+                a:hover {
+                    color: maroon;
+                }
             }
         }
     }
