@@ -6,12 +6,14 @@
 
 
 .app-container {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
+    margin: 0 0 25px 0;
 
     @media (max-width: 767.98px) {
       flex-direction: column;
@@ -31,18 +33,69 @@
 
     .leaflet-popup-content,
     .leaflet-popup-pane {
-      width: 75%;
+      width: 85%;
 
-        h2 {
+        h3 {
+            position: relative;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
             font-size: 18px;
+            font-family: "Barlow Semi Condensed", "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+            overflow: visible;
+        }
+        div.contact {
+            position: relative;
+            display: inline-block;
+            margin: 0 0 .5rem 24px;
+            overflow: visible;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                left: -24px;
+                top: 5px;
+                width: 18px;
+                height: 18px;
+                text-indent: -9999px;
+                background-position-x: 0;
+                background-position-y: 50%;
+                background-repeat: no-repeat;
+                background-size: 13px;
+            }
+
+            &.phone::before {
+                background-image: url('../images/icon-phone.svg');
+            }
+            &.email::before {
+                background-image: url('../images/icon-email.svg');
+            }
+
+            a:link,
+            a:visited {
+                position: relative;
+                display: inline-block;
+                font-size: 13px;
+                font-family: Montserrat, "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+                color: #ef3e33;
+                text-decoration: none;
+            }
+
+            a:active,
+            a:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
 #location-list-panel {
+    position: relative;
     width: 240px;
     height: 500px;
     margin: 0 0 0 0;
-    padding: 0 0 0 20px;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+    overflow: hidden;
 
     @media (max-width: 767.98px) {
       width: 100%;
@@ -52,14 +105,21 @@
     }
     
     h2 {
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        position: relative;
+        margin: 0 0 .875rem 0;
+        padding: 0 0 .875rem 1rem;
+        background-color: transparent;
         border-bottom: 2px solid #ccc;
-        font-size: 18px;
+        font-family: "Barlow Semi Condensed", "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        text-transform: none;
+        color: #ccccbc;
     }
     ul {
+        position: relative;
         height: 450px;
-        margin: 0 0 0 0;
+        margin: 10px 0 0 0;
         padding: 0 0 0 0;
         list-style: none;
         overflow-y: scroll;
@@ -74,50 +134,118 @@
         }
         
         li {
+            position: relative;
             margin: 0 0 10px 0;
-            padding: 10px;
+            padding: 10px 10px 20px 36px;
             border-bottom: 1px solid #ccc;
             list-style-type: none;
             background: none;
+            overflow: visible;
             
             &.active-loc {
                 background-color: #f3f1ee;
             }
-            &:first-child {
-                padding: 0 10px 10px 10px;
-            }
+            // &:first-child {
+            //     padding: 0px 10px 20px 20px;
+            // }
             &:last-child {
                 border-bottom: 0px solid #ccc;
-            }
-
-            a:link,
-            a:visited {
-                text-decoration: none;
-                color: black;
-            }
-            a:active,
-            a:hover {
-                color: maroon;
-            }
+            } 
 
             h3 {
+                position: relative;
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
-                font-size: 14px;
+                font-size: 18px;
+                font-family: "Barlow Semi Condensed", "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+                overflow: visible;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    left: -24px;
+                    width: 18px;
+                    height: 30px;
+                    background-image: url('../images/icon-location-marker-red.svg');
+                    background-position-x: 0;
+                    background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: 18px;
+                }
+
+                a:link,
+                a:visited {
+                    color: black;
+                    text-decoration: none;
+                }
+                a:active,
+                a:hover {
+                    color: #ef3e33;
+                }
             }
             p {
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
-                font-size: 14px;
+                font-size: 15px;
+                font-family: Montserrat, "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+            }
+            div.distance {
+                margin: .5rem 0;
+                font-size: 12px;
+                color: #ccccbc;
+            }
+
+            div.detials {
+                position: relative;
+                margin: 0 0 .5rem 0;
+                padding: 0 0 0 0;
+                font-size: 15px;
+                font-family: Montserrat, "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+            }
+            div.contact {
+                position: relative;
+                display: inline-block;
+                margin: 0 0 .5rem 0;
+                overflow: visible;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    left: -24px;
+                    top: 4px;
+                    width: 18px;
+                    height: 18px;
+                    text-indent: -9999px;
+                    background-position-x: 0;
+                    background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: 13px;
+                }
+
+                &.phone::before {
+                    background-image: url('../images/icon-phone.svg');
+                }
+                &.email::before {
+                    background-image: url('../images/icon-email.svg');
+                }
 
                 a:link,
                 a:visited {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 13px;
+                    font-weight: normal;
+                    font-family: Montserrat, "Microsoft YaHei New", "Microsoft Yahei", 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+                    color: #ef3e33;
                     text-decoration: none;
-                    color: #0078A8;
+                    word-wrap: break-word;
                 }
+
                 a:active,
                 a:hover {
-                    color: maroon;
+                    text-decoration: underline;
                 }
             }
         }

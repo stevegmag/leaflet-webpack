@@ -1,8 +1,10 @@
 //console.log('app loaded');
 
-// TODO: SG: get orig zip
-
-// TODO: SG: convert zip to lat, lng
+// TODO: SG: get orig zip >> current_postal_code (twig file)
+// current_location.latitude (twig file)
+// current_location.longitude (twig file)
+// let remote_lat = current_location.latitude;
+// let remote_lng = current_location.longitude
 
 // VARS: SG: set defaults and globals
 let daMap;
@@ -16,7 +18,10 @@ const site =(() => {
 const redIconURL = (site == 'localhost')?
     '../dist/images/marker-icon-red.png':
     '/themes/custom/fmc/dist/images/marker-icon-red.png';
-const redShadowURL = (site == 'localhost')?
+const blueIconURL = (site == 'localhost')?
+    '../dist/images/marker-icon.png':
+    '/themes/custom/fmc/dist/images/marker-icon.png';
+const shadowURL = (site == 'localhost')?
     '../dist/images/marker-shadow.png':
     '/themes/custom/fmc/dist/images/marker-shadow.png';
 const countryCode = (() => {
@@ -24,8 +29,18 @@ const countryCode = (() => {
     daPath = daPath.indexOf('/us/');
     return (daPath > -1)?'us':'nonus';
 })();
+const sitePathRoot = (() => {
+    let daRoot = window.location.pathname;
+    daRoot = (daRoot.length >= 7)? 
+        daRoot.slice(0,7):
+        '/us/en/';
+    return daRoot;
+})();
+const apiEndPoint = sitePathRoot + 'api/retailers.json';
+//console.log("apiEndPoint: ", apiEndPoint);
 const distanceUnit = (countryCode == "us")? "mi" : "km";
 const maxListCnt = 10;
+const maxMapCnt = 50;
 const orgZoom = 8; //default/UK 7; US: 5;
 const zoomZoom = 12;
 // TODO: SG: add variables from twig file
@@ -44,29 +59,38 @@ const orgCenter = (() => {
         // const orgCenter = { lat: 52.632469, lng: -1.689423 }, // UK
         // const orgCenter = { lat: 39.0921017, lng: -96.8169365 }, // US KC
         // const orgCenter = {lat: 39.168431, lng: -77.6062407}// US Lansdowne
-        return { lat: 39.0921017, lng: -96.8169365 }, // US KC
+        return { lat: 39.0921017, lng: -96.8169365 } // US KC
     }
-    console.log("orgCenter: ", orgCenter);
+    // console.log("orgCenter: ", orgCenter);
 })();
+// TODO: SG: setup up blue (default) marker and swap the default with red
 const redIcon = L.icon({
-    //iconUrl: '../dist/images/marker-icon-red.png',
     iconUrl: redIconURL,
     iconSize: [25, 41],
     iconAnchor: [25, 41],
     popupAnchor: [-10, -51],
-    //shadowUrl: '../dist/images/marker-shadow.png',
-    shadowUrl: redShadowURL,
+    shadowUrl: shadowURL,
+    shadowSize: [25, 41],
+    shadowAnchor: [25, 41]
+}); //redIcon
+const blueIcon = L.icon({
+    iconUrl: blueIconURL,
+    iconSize: [25, 41],
+    iconAnchor: [25, 41],
+    popupAnchor: [-10, -51],
+    shadowUrl: shadowURL,
     shadowSize: [25, 41],
     shadowAnchor: [25, 41]
 }); //redIcon
 
 // FUNC: SG: read in data 
 const getLocations = (async () => {
-    // console.log("getLocations: in:: ");
-    //const response = await fetch("./data/jf-offices-US.json");
+    //console.log("getLocations: in:: ");
+    //const response = await fetch("../data/jf-offices-US.json");
     //const response = await fetch("../data/retailers-geojson.json");
     //const response = await fetch("../data/retailers-geojson-150.json");
-    const response = await fetch("/us/en/api/retailers.json");
+    //const response = await fetch("/us/en/api/retailers.json");
+    const response = await fetch(apiEndPoint);
     const locations = await response.json();
     //console.log("getLocations: locations:: ", locations);
     return locations;
@@ -115,11 +139,13 @@ const initMap = (() => {
         id: 'mapbox/streets-v11',
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: 'pk.eyJ1Ijoic3RldmVnbWFnIiwiYSI6ImNrOHluOWM2MDFqd3EzaXByYzczYzE5eGgifQ.4lM79kpPK_npQd6LsV4UUA' // stevegmag api key
+        accessToken: 'pk.eyJ1IjoiZm1jYWctbmEiLCJhIjoiY2s5OXV5ZTR5MWttbDNwbGNjMHJtaWg1bSJ9.HtuFS1-t9oOi98ykHFXNMA' // client api key
     }).addTo(daMap);
-
-    // TODO: SG: add current zip marker to map
-    const orgMarker = L.marker(orgCenter, {icon: redIcon}).addTo(daMap);
+    
+    // add default icon
+    L.Marker.prototype.options.icon = redIcon;
+    // add current zip marker to map with unique icon
+    const orgMarker = L.marker(orgCenter, {icon: blueIcon}).addTo(daMap);
     orgMarker.bindPopup("<b>Your Current Location based on postal code.</b><br>Use form field to search on different postal code.").openPopup();
     
     // init dataLayer
@@ -156,7 +182,7 @@ const showLocationList = (async () => {
     //console.log("showLocationList: locationList:: locationListLen:: ", locationListLen);
     if ( locationListLen > 0 ) {
         let daHeader = document.createElement("h2");
-        daHeader.innerHTML = `Closest ${maxListCnt} Retailers`;
+        daHeader.innerHTML = `Showing ${maxListCnt} nearby retailers`;
         let daNode = document.createElement("UL");
         daNode.classList.add("location-list")
 
@@ -174,7 +200,25 @@ const showLocationList = (async () => {
             const distance = Math.round( properties.distance );
             //const image = properties.image;
             //const position = event.feature.getGeometry().get();
+            if (phone.indexOf("tel:") == -1) {
+                // phone may come with the link or not
+                phone = `<a href="tel:${phone}">${phone}</a>`
+            }
+            if (email.length > 0) {
+                email = String.raw`
+                <div class="contact email">
+                    <a href="mailto:${email}">${email}</a>
+                </div>
+                `;
+            }
 
+            if (phone.length > 0) {
+                phone = String.raw`
+                <div class="contact phone">
+                    ${phone}
+                </div>
+                `;
+            }
             //let loc = name.split(",");
             const re = new RegExp(/\W+/, 'g');
             const loc = name.replace(re, "-").toLowerCase();
@@ -184,16 +228,21 @@ const showLocationList = (async () => {
             daContent.classList.add("location-list-item");
             //<a href="#" oclick="moveToLocation(${coords});scrollListLoc('${loc}'); return false;">
                   
-            let daText = String.raw`                
-                <h3 id="${loc}"><a href="#" onclick="return false;" data-coords="${coords}" data-loc="${loc}">
-              ${name}</a></h3>
+            let daText = String.raw`  
+                <h3 id="${loc}">
+                    <a href="#" onclick="return false;" data-coords="${coords}" data-loc="${loc}">
+              ${name}</a>
+                </h3>      
+
+                <div class="distance">
+                    ~ ${distance} ${distanceUnit} from you
+                </div>            
                 
-                <p>${description}</p>
-                <p><strong>Distance:</strong> ~ ${distance} ${distanceUnit}</p>
-                <p>
-                    <strong>Phone:</strong> ${phone}<br/>
-                    <strong>Email:</strong> <a href="mailto:${email}">${email}</a>
-                </p>
+                <div class="detials">
+                    ${description}
+                </div>
+                ${phone}
+                ${email}
             `;
             daContent.innerHTML = daText;
             daNode.appendChild(daContent);
@@ -223,13 +272,20 @@ const clickActionMap = (async () => {
         let desc = layers[key].feature.properties.description;
         let email = layers[key].feature.properties.field_retailer_email;
         let phone = layers[key].feature.properties.field_retailer_telephone;
+        if (phone.indexOf("tel:") == -1) {
+            // phone may come with the link or not
+            phone = `<a href="tel:${phone}">${phone}</a>`
+        }
         layers[key].bindPopup(`
-                <h2>${name}</h2>
+                <h3>${name}</h3>
                 <p>${desc}</p>
-                <p>
-                    <strong>Phone:</strong> ${phone}<br/>
-                    <strong>Email:</strong> <a href="mailto:${email}">${email}</a>
-                </p>
+
+                <div class="contact phone">
+                    ${phone}
+                </div>
+                <div class="contact email">
+                    <a href="mailto:${email}">${email}</a>
+                </div>
         `);
         layers[key].on('click', (ev) => { 
             //console.log("ev: ", ev);
@@ -239,7 +295,6 @@ const clickActionMap = (async () => {
 })(); //clickActionMap
 
 // FUNC: SG: add click actions to list
-
 const moveToLocation = (lng, lat) => {
   //console.log("moveToLocation>> coords: ", lng, lat);
   daMap.closePopup();
@@ -249,6 +304,8 @@ const moveToLocation = (lng, lat) => {
 const scrollListLoc = (loc) => {
   //console.log("scrollListLoc loc: ", loc);
   let daClass = "active-loc";
+  let containerEl = document.getElementsByClassName("location-list");
+    containerEl = containerEl[0];
   let listItems = document.getElementsByClassName("location-list-item");
     //console.log("scrollListLoc listItems: ", listItems);
   let listItemsLen = listItems.length;
@@ -267,9 +324,39 @@ const scrollListLoc = (loc) => {
     if (!parentEl.classList.contains(daClass)) {
         parentEl.classList.add(daClass);
     }
-    el.scrollIntoView();
+    //scroll clicked to top of UL/Container  
+    let topPos = parentEl.offsetTop;
+    scrollTo(containerEl, topPos, 600);
   } else { alert(`This location not in top ${maxListCnt} retailers list.`)}
 }; //scrollLocList
+
+const scrollTo = (element, to, duration) => {
+    let start = element.scrollTop,
+        change = to - start,
+        currentTime = 0,
+        increment = 20;
+        
+    const animateScroll = () =>{        
+        currentTime += increment;
+        let val = Math.easeInOutQuad(currentTime, start, change, duration);
+        element.scrollTop = val;
+        if(currentTime < duration) {
+            setTimeout(animateScroll, increment);
+        }
+    };
+    animateScroll();
+}
+
+Math.easeInOutQuad = (t, b, c, d) => {
+    //t = current time
+    //b = start value
+    //c = change in value
+    //d = duration
+	t /= d/2;
+	if (t < 1) return c/2*t*t + b;
+	t--;
+	return -c/2 * (t*(t-2) - 1) + b;
+};
 
 // FUNC: SG: Bind list click action
 const bindListAction = () => {         
@@ -290,4 +377,4 @@ const bindListAction = () => {
             return false;
         });
     }
-};
+}; //bindListAction

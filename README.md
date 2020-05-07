@@ -14,10 +14,16 @@ npm i
 npm run watch\
 ```
 
+
+run local server for src/app:
+```bash
+python -m SimpleHTTPServer 8989
+```
+
 opensource Leaflet: 
 https://leafletjs.com/
 
-Map API: 
+Map Images API: 
 https://account.mapbox.com/
 
 Markers: 
